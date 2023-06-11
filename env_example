@@ -1,0 +1,3 @@
+LEMMY_SERVER="https://lemmy.ml"
+LEMMY_USERNAME="Username"
+LEMMY_PASSWORD="secret_password"
