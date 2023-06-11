@@ -6,8 +6,7 @@ import { env } from '$env/dynamic/private';
 export async function load({ params }) {
 
     let baseUrl = env.LEMMY_SERVER;
-    let headers = params.headers;
-    let client: LemmyHttp = new LemmyHttp(baseUrl, headers);
+    let client: LemmyHttp = new LemmyHttp(baseUrl);
 
     let communityA = await client.listCommunities({ type_: "All", page: 1, limit: 50 });
 
